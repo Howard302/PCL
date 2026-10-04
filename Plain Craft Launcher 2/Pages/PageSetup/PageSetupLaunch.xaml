@@ -30,20 +30,20 @@
                             <RowDefinition Height="9" />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="默认实例隔离" Margin="0,0,25,0" />
+                        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="默认版本隔离" Margin="0,0,25,0" />
                         <local:MyComboBox local:SettingService.Key="LaunchArgumentIndieV2" x:Name="ComboArgumentIndieV2"
                                           Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="1"
-                                          ToolTip="当安装新实例时，据此自动设置新实例的隔离选项。&#xa;若想调整已有实例的隔离策略，请前往它的实例设置。">
+                                          ToolTip="当安装新版本时，据此自动设置新版本的隔离选项。&#xa;若想调整已有版本的隔离策略，请前往它的版本设置。">
                             <local:MyComboBoxItem Content="关闭" 
-                                                  ToolTip="所有实例均使用同一档案，存档、Mod、资源包等均为公用。&#xa;若存在多个安装了 Mod 的实例，可能会导致 Mod 冲突。" />
-                            <local:MyComboBoxItem Content="隔离可安装 Mod 的实例" 
-                                                  ToolTip="可安装 Mod 的实例（例如 Forge、Fabric）均互相独立以避免 Mod 冲突，其他实例（例如原版）则不会被隔离。" />
+                                                  ToolTip="所有版本均使用同一档案，存档、Mod、资源包等均为公用。&#xa;若存在多个安装了 Mod 的版本，可能会导致 Mod 冲突。" />
+                            <local:MyComboBoxItem Content="隔离可安装 Mod 的版本" 
+                                                  ToolTip="可安装 Mod 的版本（例如 Forge、Fabric）均互相独立以避免 Mod 冲突，其他版本（例如原版）则不会被隔离。" />
                             <local:MyComboBoxItem Content="隔离非正式版" 
-                                                  ToolTip="将 Minecraft 快照、预发布版、远古实例、愚人节实例与其他实例进行隔离。" />
-                            <local:MyComboBoxItem Content="隔离可安装 Mod 的实例与非正式版"
-                                                  ToolTip="将可安装 Mod 的实例、Minecraft 快照、预发布版、远古实例、愚人节实例与其他实例进行隔离。" />
-                            <local:MyComboBoxItem Content="隔离所有实例" 
-                                                  ToolTip="不同实例之间的存档、Mod、资源包等均不互通。&#xa;这会导致不同原版实例间的存档不能共用，所以一般不推荐。" />
+                                                  ToolTip="将 Minecraft 快照、预发布版、远古版本、愚人节版本与其他版本进行隔离。" />
+                            <local:MyComboBoxItem Content="隔离可安装 Mod 的版本与非正式版"
+                                                  ToolTip="将可安装 Mod 的版本、Minecraft 快照、预发布版、远古版本、愚人节版本与其他版本进行隔离。" />
+                            <local:MyComboBoxItem Content="隔离所有版本" 
+                                                  ToolTip="不同版本之间的存档、Mod、资源包等均不互通。&#xa;这会导致不同原版版本间的存档不能共用，所以一般不推荐。" />
                         </local:MyComboBox>
                         <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Text="游戏窗口标题" Margin="0,0,25,0" />
                         <local:MyTextBox local:SettingService.Key="LaunchArgumentTitle" 
